@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Crypto-Rate</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="p-3">Crypto-Rate</h2>
+      <form id="conversion-form">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label
+              class="input-group-text bg-primary text-white"
+              for="inputGroupSelect01"
+              >Crypto-currency</label
+            >
+          </div>
+          <select class="cryptoSelect custom-select" id="dropdown">
+            <option selected>Choose...</option>
+            <option value="btc">BTC</option>
+            <option value="xrp">XRP</option>
+            <option value="eos">EOS</option>
+            <option value="ltc">LTC</option>
+            <option value="eth">ETH</option>
+          </select>
+        </div>
+        <section class="pt-3">
+          <input
+            type="text"
+            id="inputAmount"
+            class="mb-5 form-control"
+            value="0"
+          />
+        </section>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label
+              class="input-group-text bg-danger text-white"
+              for="inputGroupSelect01"
+              >Currency</label
+            >
+          </div>
+          <select class="fiatCurrencySelect custom-select" id="dropdown2">
+            <option selected>Choose...</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="aud">AUD</option>
+          </select>
+        </div>
+        <section class="pt-3">
+          <input
+            type="text"
+            id="output"
+            class="form-control"
+            readonly
+          />
+        </section>
+        <button type="submit" class="btn btn-primary m-3">Convert</button>
+      </form>
+    </div>
+  </body>
+  
+</html>
